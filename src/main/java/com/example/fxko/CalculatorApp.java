@@ -13,15 +13,18 @@ import javafx.scene.text.Font;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
+
+        /*
+ //TODO    *************************************************************************************************************
+                                   SIMPLE JAVAFX CALCULATOR MADE BY DOBBY && PROMETHEUS
+           *************************************************************************************************************
+           */
+
 public class CalculatorApp extends Application{
   StringBuilder lab = new StringBuilder();
           Label label1 = new Label();
 
-          /*
-           *************************************************************************************************************
-                                    SIMPLE JAVAFX CALCULATOR MADE BY DOBBY && PROMETHEUS
-           *************************************************************************************************************
-           */
+
 
 @Override
 public void start(Stage primaryStage) {
@@ -167,18 +170,22 @@ class action implements EventHandler<ActionEvent> {
                 || e.equals("4") || e.equals("5") || e.equals("6") || e.equals("7")
                 || e.equals("8") || e.equals("9") || e.equals(".")|| e.equals("+")
                 || e.equals("-") || e.equals("*") || e.equals("/")|| e.equals("^")|| e.equals("(")|| e.equals(")")
-        ) {
+        )
+        {
             lab.append(e);//Record characters
             label1.setText(lab.toString());
             System.out.println(e);
-        } else if (e.equals("D")) {
+        }
+        else if (e.equals("D")) {
             lab.deleteCharAt(lab.length() - 1);
             label1.setText(lab.toString());
             System.out.println("D");
-        } else if (e.equals("C")) {
+        }
+        else if (e.equals("C")) {
             lab = new StringBuilder();
             label1.setText(lab.toString());
-        } else if (e.equals("=")){
+        }
+        else if (e.equals("=")){
 
             String expression = lab.toString();
             double result = com.example.fxko.Calculator1.conversion(expression);
