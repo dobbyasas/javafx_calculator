@@ -1,10 +1,8 @@
 package com.example.fxko;
 
 class ArithHelper extends CalculatorApp{
-    // Default division precision
     private static final int DEF_DIV_SCALE = 16;
 
-    // This class cannot be instantiated
     private ArithHelper() {
     }
 

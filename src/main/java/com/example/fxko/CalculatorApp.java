@@ -17,14 +17,15 @@ public class CalculatorApp extends Application{
   StringBuilder lab = new StringBuilder();
           Label label1 = new Label();
 
-
+          public static void main(String[] args) {
+            launch(args);
+        }
 
 @Override
 public void start(Stage primaryStage) {
 
         GridPane pane1 = new GridPane();
         pane1.setAlignment(Pos.CENTER);
-        //Add node
         Button button0 = new Button("mc");
         button0.setPrefSize(200, 100);button0.setFont(Font.font(50));
         Button button2 = new Button("(");
@@ -114,10 +115,10 @@ public void start(Stage primaryStage) {
         button2.setOnAction(new action());
         button3.setOnAction(new action());
 
-        button4.setOnAction(new action());//clear operation
+        button4.setOnAction(new action());
         button5.setOnAction(new action());
         button6.setOnAction(new action());
-        button7.setOnAction(new action());//delete operation
+        button7.setOnAction(new action());
 
         button8.setOnAction(new action());
         button9.setOnAction(new action());
@@ -157,7 +158,6 @@ class action implements EventHandler<ActionEvent> {
         String a = event.toString();
         String e = a.substring(a.length() - 3, a.length() - 2);
         char c = a.charAt(a.length() - 3);
-        //System.out.println(c);
 
         if (e.equals("0") || e.equals("1") || e.equals("2") || e.equals("3")
                 || e.equals("4") || e.equals("5") || e.equals("6") || e.equals("7")
@@ -181,7 +181,7 @@ class action implements EventHandler<ActionEvent> {
         else if (e.equals("=")){
 
             String expression = lab.toString();
-            double result = com.example.fxko.Calculator1.conversion(expression);
+            double result = com.example.fxko.Calculator.conversion(expression);
             System.out.println(expression+"="+result);
             label1.setText(String.valueOf(result));
         }
