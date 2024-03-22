@@ -147,6 +147,7 @@ public void start(Stage primaryStage) {
         VBox pane = new VBox(10, label1, pane1);
 
         Scene scene = new Scene(pane);
+        scene.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
         primaryStage.setTitle("Calculator");
         primaryStage.setScene(scene);
         primaryStage.show();
@@ -183,7 +184,7 @@ class action implements EventHandler<ActionEvent> {
             String expression = lab.toString();
             double result = com.example.fxko.Calculator.conversion(expression);
             System.out.println(expression+"="+result);
-            label1.setText(String.valueOf(result));
+            label1.setText(ArithHelper.formatResult(result));
         }
     }
 }

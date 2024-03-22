@@ -1,0 +1,77 @@
+.root {
+    -fx-background-color: #121212;
+    -fx-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.label {
+    -fx-background-color: #333;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 30px;
+    -fx-padding: 20px;
+    -fx-alignment: bottom-right;
+    -fx-border-color: #444;
+    -fx-border-radius: 10px;
+}
+
+.button {
+    -fx-background-color: #333;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 24px;
+    -fx-border-color: #444;
+    -fx-effect: dropshadow(gaussian, #222, 10, 0, 2, 2);
+}
+
+.button:hover {
+    -fx-background-color: #3e3e3e;
+}
+
+.button:pressed {
+    -fx-background-color: #2a2a2a;
+}
+
+.button.operation, .button.special-function {
+    -fx-background-color: #666;
+}
+
+.button.operation:hover, .button.special-function:hover {
+    -fx-background-color: #777;
+}
+
+.button.operation:pressed, .button.special-function:pressed {
+    -fx-background-color: #555;
+}
+
+.button#buttonC {
+    -fx-background-color: #fe9500;
+}
+
+.button#buttonC:hover {
+    -fx-background-color: #ff9d0a;
+}
+
+.button#buttonC:pressed {
+    -fx-background-color: #e68900;
+}
+
+.grid-pane {
+    -fx-hgap: 10;
+    -fx-vgap: 10;
+    -fx-padding: 20;
+}
+
+.button {
+    -fx-min-width: 80px;
+    -fx-min-height: 80px;
+    -fx-max-width: 80px;
+    -fx-max-height: 80px;
+}
+
+.display-screen {
+    -fx-font-size: 36px;
+    -fx-background-color: #000000;
+    -fx-text-fill: #ffffff;
+}
+
+.calculator-scene {
+    -fx-padding: 20px;
+}
