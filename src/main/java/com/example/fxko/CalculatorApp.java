@@ -13,13 +13,6 @@ import javafx.scene.text.Font;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
-
-        /*
- //TODO    *************************************************************************************************************
-                                   SIMPLE JAVAFX CALCULATOR MADE BY DOBBY && PROMETHEUS
-           *************************************************************************************************************
-           */
-
 public class CalculatorApp extends Application{
   StringBuilder lab = new StringBuilder();
           Label label1 = new Label();
