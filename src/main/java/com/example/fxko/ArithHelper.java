@@ -69,7 +69,7 @@ class ArithHelper extends CalculatorApp{
         java.math.BigDecimal one = new java.math.BigDecimal("1");
         return b.divide(one, scale, java.math.BigDecimal.ROUND_HALF_UP).doubleValue();
     }
-//fuck 
+
     public static double round(String v, int scale) {
         if (scale < 0) {
             throw new IllegalArgumentException("The   scale   must   be   a   positive   integer   or   zero");
